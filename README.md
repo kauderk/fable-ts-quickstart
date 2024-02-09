@@ -3,11 +3,13 @@
 femto --resolve
 
 // types
-npx -p typescript tsc src/Mars.ts --declaration --allowJs --emitDeclarationOnly --outDir types
+npx -p typescript tsc src/Mars.ts --declaration --allowJs --emitDeclarationOnly 
 
 // typescript to f sharp
-npx @glutinum/cli ./types/Mars.d.ts --out-file ./fs2fable/Mars.fs
+ts2fable ./types/Mars.d.ts --out-file ./fs2fable/Mars.fs
+// be aware this generates "*", "Mars" but it should be "mars","./Mars.ts" - I'm sure I'm doing something wrong 
 
 // dev
 dotnet fable watch --lang typescript -o out --run npx vite
+// sometimes you might need to restart vscode to get the intellisense working
 ```

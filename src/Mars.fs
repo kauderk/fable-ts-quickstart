@@ -4,4 +4,4 @@ open System
 open Fable.Core
 open Fable.Core.JS
 
-let [<Import("*","Mars")>] mars: (unit -> string) = jsNative
+let [<Import("mars","./Mars.ts")>] mars: (unit -> string) = jsNative
