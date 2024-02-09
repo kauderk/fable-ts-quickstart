@@ -11,7 +11,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@glutinum/cli": "^0.4.0",
     "@types/node": "^20.11.17",
+    "ts2fable": "^0.7.1",
     "typescript": "^5.3.3",
     "vite": "^5.1.0"
   }

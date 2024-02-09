@@ -1,19 +1,16 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>my_fable_project</RootNamespace>
   </PropertyGroup>
-
   <ItemGroup>
-    <Compile Include="Program.fs" />
+    <Compile Include="src\MyModule.fs" />
+    <Compile Include="./src/Program.fs" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Fable.Browser.Dom" Version="2.16.0" />
     <PackageReference Include="Fable.Core" Version="4.3.0" />
     <PackageReference Include="Fable.Node" Version="1.2.0" />
   </ItemGroup>
-
 </Project>
