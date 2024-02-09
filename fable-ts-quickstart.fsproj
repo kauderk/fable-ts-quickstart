@@ -5,6 +5,7 @@
     <RootNamespace>my_fable_project</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="src\Mars.fs" />
     <Compile Include="src\MyModule.fs" />
     <Compile Include="./src/Program.fs" />
   </ItemGroup>
